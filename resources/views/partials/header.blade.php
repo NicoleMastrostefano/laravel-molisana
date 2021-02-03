@@ -11,4 +11,7 @@
       <a href="#">News</a>
     </li>
   </ul>
+  <div class="hidden">
+    <i class="fas fa-bars"></i>
+  </div>
 </header>

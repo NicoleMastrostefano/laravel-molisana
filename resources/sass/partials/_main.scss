@@ -3,13 +3,33 @@ main {
   background-position:bottom;
   background-size: contain;
   background-repeat: repeat;
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 15px 0px;
-  .card {
-    width: calc(100% / 3 - 10px);
-    margin: 5px;
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0px;
+    .card {
+      width: calc(100% / 3 - 10px);
+      margin: 5px;
+    }
   }
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  main {
+    .cards {
+      .card {
+        width: calc(100% / 2 - 10px);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    .cards {
+      flex-direction: column;
+      .card {
+        width: 100%;
+      }
+    }
+  }
 }

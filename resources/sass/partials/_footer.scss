@@ -2,6 +2,7 @@
   width: 70%;
   margin: 50px auto;
   color: $footerColor;
+  display: flex;
   li {
     list-style: none;
     padding: 4px 0;
@@ -9,8 +10,6 @@
   }
   #left, #central, #right {
     width: 30%;
-    height: 450px;
-    float: left;
     h3 {
       margin: 3% 0;
     }
@@ -23,5 +22,17 @@
   }
   #right {
     padding-left: 40px;
+  }
+}
+@media (max-width: 767px) {
+  #footer_container {
+    flex-direction: column;
+    #left, #central, #right {
+      width: 100%;
+      padding: 0px;
+      h3 {
+        margin: 15px 0px;
+      }
+    }
   }
 }
