@@ -1,0 +1,27 @@
+#footer_container {
+  width: 70%;
+  margin: 50px auto;
+  color: $footerColor;
+  li {
+    list-style: none;
+    padding: 4px 0;
+    font-size: 12px;
+  }
+  #left, #central, #right {
+    width: 30%;
+    height: 450px;
+    float: left;
+    h3 {
+      margin: 3% 0;
+    }
+  }
+  #left li {
+      padding: 0;
+  }
+  #central {
+    padding-left: 25px;
+  }
+  #right {
+    padding-left: 40px;
+  }
+}

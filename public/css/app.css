@@ -33,9 +33,62 @@ a {
   font-weight: 700;
 }
 
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
 header {
   text-align: center;
 }
 header img {
   margin: 50px 0px;
+}
+
+main {
+  background-image: url("/img/fondo-pag-speciali.jpg");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: repeat;
+}
+main .cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0px;
+}
+main .cards .card {
+  width: calc(100% / 3 - 10px);
+  margin: 5px;
+}
+
+#footer_container {
+  width: 70%;
+  margin: 50px auto;
+  color: grey;
+}
+#footer_container li {
+  list-style: none;
+  padding: 4px 0;
+  font-size: 12px;
+}
+#footer_container #left, #footer_container #central, #footer_container #right {
+  width: 30%;
+  height: 450px;
+  float: left;
+}
+#footer_container #left h3, #footer_container #central h3, #footer_container #right h3 {
+  margin: 3% 0;
+}
+#footer_container #left li {
+  padding: 0;
+}
+#footer_container #central {
+  padding-left: 25px;
+}
+#footer_container #right {
+  padding-left: 40px;
 }
