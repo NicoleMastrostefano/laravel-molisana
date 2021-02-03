@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans",sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+#list_inline {
+  list-style: none;
+  li {
+    display: inline-block;
+    padding: 20px 10px;
+    margin: 0px 10px;
+    &.active {
+      background-color: $azureColor;
+    }
+    &:hover {
+      background-color: $azureColor;
+    }
+    a {
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    }
+  }
+}
