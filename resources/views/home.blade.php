@@ -11,6 +11,9 @@
           <div class="card">
             <!-- Img del tipo di pasta   -->
             <img src="{{$pasta['src']}}" alt="">
+            <div class="card-text">
+              <a href="{{ route('product', ['id' => $pasta["id"]]) }}">{{ $pasta["titolo"] }}</a>
+            </div>
           </div>
           @endforeach
         </div>
@@ -25,6 +28,9 @@
             <div class="card">
               <!-- Img del tipo di pasta   -->
               <img src="{{$pasta['src']}}" alt="">
+              <div class="card-text">
+                <a href="{{ route('product', ['id' => $pasta["id"]]) }}">{{ $pasta["titolo"] }}</a>
+              </div>
             </div>
           @endforeach
         </div>
@@ -39,6 +45,9 @@
 	          <div class="card">
               <!-- Img del tipo di pasta   -->
 		          <img src="{{$pasta['src']}}" alt="">
+              <div class="card-text">
+                <a href="{{ route('product', ['id' => $pasta["id"]]) }}">{{ $pasta["titolo"] }}</a>
+              </div>
 	          </div>
           @endforeach
         </div>

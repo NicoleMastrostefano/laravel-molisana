@@ -1,6 +1,8 @@
 @extends('layouts.main')
 @section('content')
     <main>
-        page news
+      <div class="container">
+        <h2>page news</h2>
+      </div>
     </main>
 @endsection
