@@ -1,46 +1,49 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset("css/app.css")}}">
-  </head>
-  <body>
-     @include("partials.header")
-     <main>
+@extends('layouts.main')
+
+@section('content')
+  <main>
+    <div id="wrapper">
+      <!-- SEZIONE LE LUNGHE -->
       <section class="container">
         <h2>LE LUNGHE</h2>
         <div class="cards">
           @foreach ($lunghe as $pasta)
           <div class="card">
+            <!-- Img del tipo di pasta   -->
             <img src="{{$pasta['src']}}" alt="">
           </div>
           @endforeach
         </div>
       </section>
+      <!-- /SEZIONE LE LUNGHE -->
+
+      <!-- SEZIONE LE CORTE -->
       <section class="container">
         <h2>LE CORTE</h2>
-	      <div class="cards">
-		      @foreach ($corte as $pasta)
-			      <div class="card">
-				      <img src="{{$pasta['src']}}" alt="">
-			      </div>
+        <div class="cards">
+          @foreach ($corte as $pasta)
+            <div class="card">
+              <!-- Img del tipo di pasta   -->
+              <img src="{{$pasta['src']}}" alt="">
+            </div>
           @endforeach
-	      </div>
+        </div>
       </section>
+      <!-- /SEZIONE LE CORTE -->
+
+      <!-- SEZIONE LE CORTISSIME -->
       <section class="container">
         <h2>LE CORTISSIME</h2>
         <div class="cards">
           @foreach ($cortissime as $pasta)
 	          <div class="card">
+              <!-- Img del tipo di pasta   -->
 		          <img src="{{$pasta['src']}}" alt="">
 	          </div>
           @endforeach
         </div>
       </section>
-     </main>
-     @include("partials.footer")
-  </body>
-</html>
+      <!-- /SEZIONE LE CORTISSIME -->
+    </div>
+  </main>
+@endsection

@@ -1,3 +1,4 @@
+@import url(https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">);
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap);
 * {
   box-sizing: border-box;
@@ -52,32 +53,32 @@ header .hidden {
   display: none;
 }
 
-main {
+main #wrapper {
   background-image: url("/img/fondo-pag-speciali.jpg");
   background-position: bottom;
   background-size: contain;
   background-repeat: repeat;
 }
-main .cards {
+main #wrapper .cards {
   display: flex;
   flex-wrap: wrap;
   margin: 15px 0px;
 }
-main .cards .card {
+main #wrapper .cards .card {
   width: calc(100% / 3 - 10px);
   margin: 5px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  main .cards .card {
+  main #wrapper .cards .card {
     width: calc(100% / 2 - 10px);
   }
 }
 @media (max-width: 767px) {
-  main .cards {
+  main #wrapper .cards {
     flex-direction: column;
   }
-  main .cards .card {
+  main #wrapper .cards .card {
     width: 100%;
   }
 }
